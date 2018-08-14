@@ -33,8 +33,11 @@ class Main extends Component {
             /* When using list you need to specify a key
              * attribute that is unique for each list item
             */
-            <li key={product.id} >
-                { product.title } 
+           
+            <li key={product.id}  >
+                Quantity: { product.availability } <br />
+                $: { product.price } <br />
+                Status: {product.availability ? 'Available' : 'Out of stock'} 
             </li>      
         );
     })

@@ -36407,10 +36407,20 @@ var Main = function (_Component) {
           /* When using list you need to specify a key
            * attribute that is unique for each list item
           */
+
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'li',
             { key: product.id },
-            product.title
+            'Quantity: ',
+            product.availability,
+            ' ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            '$: ',
+            product.price,
+            ' ',
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
+            'Status: ',
+            product.availability ? 'Available' : 'Out of stock'
           )
         );
       });
